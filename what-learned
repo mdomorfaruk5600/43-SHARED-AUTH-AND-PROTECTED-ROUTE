@@ -1,2 +1,2 @@
-1. work on react downloaded project wher node_modules folder is missing. use npm install command for install all the package or dependences of package.json or package-lock.json file.
-   ==> npm install
+1. install react-router-dom. it is used to make project with different route.
+   ==> npm install react-router-dom
