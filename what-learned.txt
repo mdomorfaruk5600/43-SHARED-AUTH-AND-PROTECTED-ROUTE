@@ -1,22 +1,4 @@
-1. setup react Router on primary component (App/Index).js {} import Router component from react-router-dom.
-   ==> import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
-2. use Route component to define route. path='/' attribute of route is used to define route url / path. element={<Component></Component>} is used to show component route url / path specific.Route component is a children of Routes component. And Routes Component is a child of Route Component. The common part of website will used on the top of Router Component
-   ==>
-   function App(){
-   return(
-   <div>
-   <Header></Header>
-   <Router>
-   <Routes>
-   <Route path='/shop' element={<Shop></Shop>} />
-   </Routes>
-   </Router>
-   </div>
-   );
-   }
-
-3. The exact keyword of Route component is used to match with exact brower path url / path defined on path attribute.
-   ==> <Route exact path='/shop' element={<Shop></Shop>} />
-4. (*) start is used to show 404 page on website. this route will be the last Route.
-   ==> <Route path='*' element={<NotFound></NotFound>} />
+1. Link component of react-router-dom is used to go one page to another without page refresh.
+   ==> import {Link} from 'react-router-dom';
+2. colon (:) is used to set dynamic parameter on route 
+   ==> <Route path="/product/:productKey" element={<ProductDetail></ProductDetail>} />
