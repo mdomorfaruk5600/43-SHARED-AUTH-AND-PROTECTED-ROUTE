@@ -1,4 +1,10 @@
-1. Link component of react-router-dom is used to go one page to another without page refresh.
-   ==> import {Link} from 'react-router-dom';
-2. colon (:) is used to set dynamic parameter on route 
-   ==> <Route path="/product/:productKey" element={<ProductDetail></ProductDetail>} />
+1. get route parameter by using useParams hook of react-router-dom;
+    ==> import {useParams} from 'react-router-dom';
+    function AppDetail() {
+        const rParam = useParams();
+        return(
+            <h1>{rParam}</h1>
+        );
+    }
+2. write if condition on react jsx code. By using (&&) operator. if the condition is true than render the part.
+    ==> {props.showAddToCart && <button>Add to cart</button>}
