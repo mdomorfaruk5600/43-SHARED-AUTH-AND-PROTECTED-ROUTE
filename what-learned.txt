@@ -1,6 +1,6 @@
-1. localStorage.setItem() is used to set item on localStorage.
-    ==> localStorage.setItem(key, value);
-2. localStorage.getItem(key) is used to get item on localStorage.
-    ==> localStorage.getItem(key);
-3. sessionStorage.setItem() is used to get item on sessionStorage.
-    ==> sessionStorage.setItem(key, value);
+1. Retrive data form localStorage.
+2. If parent component is rerender the child component will be automatically rerender.
+3. keys() method of Object class is used to get all the object key as array. the arg is object.
+    ==> const productKeys = Object.keys(savedProducts);
+4. values() method of Object class is usedt to get all the object value as array. the arg is object.
+    ==> const productValues = Object.values(savedProducts);

@@ -25,7 +25,6 @@ const Cart = (props) => {
         const precession = num.toFixed(2);
         return Number(precession);
     }
-
     return (
         <div>
             <h3>Order Summary</h3>
