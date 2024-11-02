@@ -1,0 +1,1 @@
+1. React Developer Tools extension is used to debug react website.
