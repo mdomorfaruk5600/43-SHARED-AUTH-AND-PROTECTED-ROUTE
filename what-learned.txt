@@ -1,4 +1,1 @@
-1. props.children is used to get the child element of component
-    ==> <Cart><button></button></Cart> : {props.children}
-2. localStorage.removeItem() is used to remove the local storage data. the arg is data key;
-    ==> localStorage.removeItem(getDataKey());
+1. react conditional rendering on App to User component.
