@@ -26,6 +26,7 @@ const Shop = () => {
     const handleAddProduct = (product) => {
         const toBeAddedKey = product.key;
         const sameProduct = cart.find(pd => pd.key === toBeAddedKey);
+        console.log(product);
         let count = 1;
         let newCart;
         if(sameProduct){
@@ -37,6 +38,7 @@ const Shop = () => {
             product.quantity = count;
             newCart = [...cart, product];
         }
+        console.log(newCart);
         setCart(newCart);
         addToDatabaseCart(product.key, count);
     } 
